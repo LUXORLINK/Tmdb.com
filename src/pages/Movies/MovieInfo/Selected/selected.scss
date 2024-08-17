@@ -1,0 +1,29 @@
+.selected {
+    padding: 20px;
+    
+  
+    .movie-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .movie-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 200px;
+      text-align: center;
+       
+      img {
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+      }
+  
+      .movie-details {
+        margin-top: 10px;
+      }
+    }
+  }
+  

@@ -1,0 +1,52 @@
+.actor-details {
+  padding:0  20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actor-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.actor-info img {
+  width: 150px;
+  height: 225px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.actor-info .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-credits {
+  width: 100%;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.movie-card img {
+  width: 100px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.movie-info {
+  margin-top: 10px;
+}
+ 

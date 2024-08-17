@@ -1,0 +1,23 @@
+.wrapper {
+  &__fon {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #433D8B;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 768px) {
+      padding: 10px; 
+    }
+    @media (max-width: 814px) {
+      margin: 0 auto;
+    }
+  }
+}

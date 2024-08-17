@@ -1,0 +1,65 @@
+
+.movie-details {
+  display: flex;
+  margin: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .Selected-imgs {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    cursor: pointer; 
+
+    &.active {
+      background-color: gold; 
+    }
+
+    &:hover {
+      background-color: lightgoldenrodyellow;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.movie-details img {
+  max-width: 300px;
+  border-radius: 8px;
+  margin-right: 20px;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 20px;
+    max-width: 100%; 
+  }
+}
+
+.details-content {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  color: white;
+  width: 100%;
+  max-width: 700px; 
+  z-index: 1;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+}
+
+.details-content h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.details-content p {
+  margin: 5px 0;
+  line-height: 1.6;
+}

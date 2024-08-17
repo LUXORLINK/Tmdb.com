@@ -1,0 +1,75 @@
+.wrapper__box {
+  padding: 0 20px;
+  background-color: #E2E2B6;
+  h2 {
+    background-image: url(../../assets/images/mountains-8325717_1280.webp);
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+    font-size:  80px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .movies-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+
+    @media screen and (max-width: 1230px) {
+      grid-template-columns: repeat(3, 1fr); 
+    }
+
+    @media screen and (max-width: 887px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 576px) {
+      grid-template-columns: 1fr; 
+  }
+
+  .card {
+    background: #17153B;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    img {
+      filter: drop-shadow(0 -6mm 4mm rgb(160, 0, 210));
+      width: 200px;
+      height: 300px;
+      object-fit: contain;
+      border-radius: 11px;
+      margin-top: 10px;
+    }
+
+    .details {
+      margin-top: 10px;
+
+      h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #fff;
+      }
+
+      p {
+        margin: 0;
+        font-size: 14px;
+        color: #ccc;
+      }
+    }
+  }
+}
+}
